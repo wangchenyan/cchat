@@ -256,7 +256,9 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 如果服务端在本机运行，需要和客户端在同一个局域网，如果是在公网运行则不需要。
 
 ## 运行效果
-<img src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot01.gif"/><img src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot02.gif"/>
+
+![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot01.gif)
+![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot02.gif)
 
 ## 源码
 

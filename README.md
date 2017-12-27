@@ -20,10 +20,10 @@ Netty是由 JBOSS 开发的一个 Java 开源框架
 
 这段简介摘自 netty 官网，是对 netty 的高度概括。已经帮你们翻译好了 ^_^
 
-> Netty is a NIO client server framework which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server.
+> Netty is a NIO client server framework which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server.<br>
 > 'Quick and easy' doesn't mean that a resulting application will suffer from a maintainability or a performance issue. Netty has been designed carefully with the experiences earned from the implementation of a lot of protocols such as FTP, SMTP, HTTP, and various binary and text-based legacy protocols. As a result, Netty has succeeded to find a way to achieve ease of development, performance, stability, and flexibility without a compromise.
 > 
-> Netty是一个NIO客户端服务器框架，可以快速简单地开发协议服务器和客户端等网络应用程序。 它极大地简化和简化了TCP和UDP套接字服务器等网络编程。
+> Netty是一个NIO客户端服务器框架，可以快速简单地开发协议服务器和客户端等网络应用程序。 它极大地简化和简化了TCP和UDP套接字服务器等网络编程。<br>
 > “快速而简单”并不意味着由此产生的应用程序将受到可维护性或性能问题的困扰。 Netty的设计经验非常丰富，包括FTP，SMTP，HTTP以及各种基于二进制和文本的传统协议。 因此，Netty已经成功地找到了一个方法来实现轻松的开发，性能，稳定性和灵活性，而不用妥协。
 
 一复制就停不下来了 =。= 主要是觉得官网介绍的很准确。

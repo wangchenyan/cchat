@@ -227,8 +227,10 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 如果服务端在本机运行，需要和客户端在同一个局域网，如果是在公网运行则不需要。
 
 ## 运行效果
+<iframe height=498 width=510 src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/video01.mp4" frameborder=0 allowfullscreen></iframe>
+
 <video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
-    <source id="mp4" src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/video01,mp4" type="video/mp4">
+    <source id="mp4" src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/video01.mp4" type="video/mp4">
     <p>Your user agent does not support the HTML5 Video element.</p>
 </video>
 

@@ -1,5 +1,5 @@
 # Android 长连接初体验（基于netty）
-![]()
+![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/netty.png)
 
 ## 前言
 众所周知，推送和 IM 在 Android 应用中很常见，但真正自己去实现的比较少，我们大多会去选择第三方提供的成熟方案，如极光推送、云信等，因为移动网络具有不确定性，因此自己实现一套稳定的方案会耗费很多精力，这对于小公司来说是得不偿失的。
@@ -227,11 +227,14 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 如果服务端在本机运行，需要和客户端在同一个局域网，如果是在公网运行则不需要。
 
 ## 运行效果
-
+<video id="video" controls="" preload="none" poster="http://media.w3.org/2010/05/sintel/poster.png">
+    <source id="mp4" src="https://raw.githubusercontent.com/wangchenyan/CChat/master/art/video01,mp4" type="video/mp4">
+    <p>Your user agent does not support the HTML5 Video element.</p>
+</video>
 
 ## 源码
 只看上面的代码可能还是有点懵逼，建议大家跑一下源码，会对 netty 有一个更清晰的认识。
-[]()
+[https://github.com/wangchenyan/CChat](https://github.com/wangchenyan/CChat)
 
 ## 总结
 今天我们一起认识了 netty，并使用 netty 实现了一个简单的 IM 应用。这里我们仅仅实现了 IM 核心功能，其他比如保活机制、断线重连不在本文讨论范围之内。

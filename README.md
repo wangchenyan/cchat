@@ -8,7 +8,7 @@
 
 推送和 IM 我们平时用的很多，但真正了解原理的不多，真正动手实现过的不多。推送和 IM 本质上都是长连接，无非是业务方向不同，因此我们以下统称为长连接。今天我们一起来揭开长连接的神秘面纱。
 
-## netty 是何物
+## [netty](http://netty.io/) 是何物
 
 虽然很多人都对 netty 比较熟悉了，但是可能还是有不了解的同学，因此我们先简单介绍下 netty。
 
@@ -18,7 +18,7 @@ Netty是由 JBOSS 开发的一个 Java 开源框架
 > 
 > Netty是一个异步事件驱动的网络应用程序框架，用于快速开发可维护的高性能协议服务器和客户端。
 
-这段简介摘自 netty 官网，是对 netty 的高度概括。已经帮你们翻译好了 ^_^
+这段简介摘自 netty 官网，是对 netty 的高度概括。已经帮你们翻译好了 ^ _ ^
 
 > Netty is a NIO client server framework which enables quick and easy development of network applications such as protocol servers and clients. It greatly simplifies and streamlines network programming such as TCP and UDP socket server.<br>
 > 'Quick and easy' doesn't mean that a resulting application will suffer from a maintainability or a performance issue. Netty has been designed carefully with the experiences earned from the implementation of a lot of protocols such as FTP, SMTP, HTTP, and various binary and text-based legacy protocols. As a result, Netty has succeeded to find a way to achieve ease of development, performance, stability, and flexibility without a compromise.
@@ -36,11 +36,13 @@ Netty是由 JBOSS 开发的一个 Java 开源框架
 
 ## 构思
 
-作为一个 IM 应用，我们要支持登录，登录操作在长连接建立后进行。
+作为一个 IM 应用，我们需要识别用户，客户端建立长连接后需要汇报自己的信息，服务器验证通过后将其缓存起来，表明该用户在线。
 
 客户端是一个一个的个体，服务器作为中转，比如，A 给 B 发送消息，A 先把消息发送到服务器，并告诉服务器这条消息要发给谁，然后服务器把消息发送给 B。
 
 服务器在收到消息后可以对消息进行存储，如果 B 不在线，就等 B 上线后再将消息发送过去。
+
+![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/network.png)
 
 ## 实战
 

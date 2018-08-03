@@ -1,6 +1,6 @@
 # Android 长连接初体验（基于netty）
 
-![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/netty.png)
+![](https://raw.githubusercontent.com/wangchenyan/cchat/master/art/netty.png)
 
 ## 前言
 
@@ -42,7 +42,7 @@ Netty是由 JBOSS 开发的一个 Java 开源框架
 
 服务器在收到消息后可以对消息进行存储，如果 B 不在线，就等 B 上线后再将消息发送过去。
 
-![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/network.png)
+![](https://raw.githubusercontent.com/wangchenyan/cchat/master/art/network.png)
 
 ## 实战
 
@@ -259,13 +259,13 @@ public class NettyServerHandler extends SimpleChannelInboundHandler<String> {
 
 ## 运行效果
 
-![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot01.gif)
-![](https://raw.githubusercontent.com/wangchenyan/CChat/master/art/screenshot02.gif)
+![](https://raw.githubusercontent.com/wangchenyan/cchat/master/art/screenshot01.gif)
+![](https://raw.githubusercontent.com/wangchenyan/cchat/master/art/screenshot02.gif)
 
 ## 源码
 
 只看上面的代码可能还是有点懵逼，建议大家跑一下源码，会对 netty 有一个更清晰的认识。
-[https://github.com/wangchenyan/CChat](https://github.com/wangchenyan/CChat)
+[https://github.com/wangchenyan/CChat](https://github.com/wangchenyan/cchat)
 
 ## 总结
 
